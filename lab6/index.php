@@ -411,6 +411,7 @@ if (isset($_POST['A'])) {
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
         // отправка письма (можно добавить проверку в качестве статуса отправки письма)
+        // необходим SMTP-Server
         @mail($formData['MAIL'], 'Результат тестирования', $plainText, $headers);
 
         $mailMessage = 'Результаты теста были автоматически отправлены на e-mail ' . $formData['MAIL'];
