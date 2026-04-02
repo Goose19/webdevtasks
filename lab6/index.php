@@ -26,7 +26,7 @@ function normalizeNumber($value)
     return (float)$value; // вывод числа с плавающей точкой
 }
 
-// Красивый вывод числа
+// Нормализация вывода числа
 function formatNumber($value)
 {
     $formatted = number_format((float)$value, 2, '.', ''); // приведение числа к float
@@ -371,7 +371,7 @@ if (isset($_POST['A'])) {
     // добавление остальных результатов в отчет
     $reportText .= '<p><b>Тип задачи:</b> ' . $tasks[$formData['TASK']] . '</p>';
     $reportText .= '<p><b>Входные данные:</b> A = ' . $formData['A'] . ', B = ' . $formData['B'] . ', C = ' . $formData['C'] . '</p>';
-    $reportText .= '<p><b>Предполагаемый результат:</b> ' . $humanResultText . '</p>';
+    $reportText .= '<p><b>Введенный результат:</b> ' . $humanResultText . '</p>';
     $reportText .= '<p><b>Вычисленный программой результат:</b> ' . $programResultText . '</p>';
 
     // вывод итога проверки разным цветом
@@ -401,7 +401,7 @@ if (isset($_POST['A'])) {
         // добавление результатов в письмо
         $plainText .= "Тип задачи: " . $tasks[$formData['TASK']] . "\r\n";
         $plainText .= "Входные данные: A = " . $formData['A'] . ", B = " . $formData['B'] . ", C = " . $formData['C'] . "\r\n";
-        $plainText .= "Предполагаемый результат: " . strip_tags($humanResultText) . "\r\n";
+        $plainText .= "Введенный результат: " . strip_tags($humanResultText) . "\r\n";
         $plainText .= "Вычисленный программой результат: " . $programResultText . "\r\n";
         $plainText .= "Вывод: " . $testConclusion . "\r\n";
 
