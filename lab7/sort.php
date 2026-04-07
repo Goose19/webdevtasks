@@ -15,6 +15,30 @@ if (!isset($_POST['element0'])) {
 }
 
 // Проверка числа
+//function arg_is_Num($arg)
+//{
+//    $arg = trim((string)$arg);
+//    $arg = str_replace(' ', '', $arg);
+//    $arg = str_replace(',', '.', $arg);
+//
+//    if ($arg === '') {
+//        return false;
+//    }
+//
+//    if (is_numeric($arg)) {
+//        return true;
+//    }
+//
+//    return false;
+//}
+
+// ну или
+// function arg_is_Num($arg) {
+// return !arg_is_not_Num($arg);
+//}
+
+
+// Проверка числа
 function arg_is_not_Num($arg)
 {
     $arg = trim((string)$arg); // приведение числа к строке и удаление пробелов
