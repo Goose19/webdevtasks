@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    background: #0f3d2e;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+main {
+    background: white;
+    color: black;
+    padding: 30px 20px 90px;
+    flex: 1;
+}
+
+footer {
+    background: #292828;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lab-table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+    background: white;
+}
+
+.lab-table td {
+    border: 1px solid black;
+    padding: 14px;
+    vertical-align: top;
+    line-height: 1.8;
+}
+
+.ttRow,
+.ttSingleRow {
+    border: 1px solid black;
+    background: white;
+    padding: 14px;
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+.content-shell {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-card {
+    background: white;
+    border: 1px solid #d3d0d0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.form-card h2,
+.ttSingleRow h2 {
+    margin-top: 0;
+    color: #0f3d2e;
+}
+
+.helper-text {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.form-card .lab-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    background: transparent;
+}
+
+.form-card .lab-table tr {
+    background: transparent;
+}
+
+.form-card .lab-table td {
+    border: none;
+    padding: 0;
+    vertical-align: top;
+    line-height: normal;
+    background: transparent;
+}
+
+.form-card .lab-table td:first-child {
+    width: 28%;
+    padding-right: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.form-card .lab-table td:last-child {
+    width: 72%;
+}
+
+.form-card .lab-table input[type="text"],
+.form-card .lab-table select,
+.form-card .lab-table textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #b9b5b5;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+.button-cell {
+    text-align: left;
+    padding-top: 10px !important;
+}
+
+.button-row {
+    margin-top: 12px;
+}
+
+.key {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 170px;
+    height: 42px;
+    background: #0f3d2e;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+    transition: 0.15s;
+    padding: 0 16px;
+}
+
+.key:hover {
+    background: #14533f;
+    transform: translateY(-1px);
+}
+
+.key:active {
+    transform: translateY(0);
+}
+
+.secondary {
+    background: #9f2525;
+}
+
+.secondary:hover {
+    background: #b12c2c;
+}
+
+.repeat-wrap {
+    margin-top: 25px;
+}
+
+.reset {
+    background: #9f2525;
+}
+
+.reset:hover {
+    background: #b12c2c;
+}
+
+.success-text {
+    color: #0f7a36;
+    font-weight: bold;
+}
+
+.error-text {
+    color: #9f2525;
+    font-weight: bold;
+}
+
+.inner-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 4px;
+}
+
+.inner-table td {
+    border: 1px solid #b9b5b5 !important;
+    padding: 8px !important;
+    vertical-align: middle !important;
+}
+
+.index-cell {
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    background: white;
+}
+
+.arr_element {
+    float: left;
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 4px;
+}
+
+.array-line {
+    margin-bottom: 14px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+@media (max-width: 720px) {
+    .form-card .lab-table,
+    .form-card .lab-table tbody,
+    .form-card .lab-table tr,
+    .form-card .lab-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .form-card .lab-table td:first-child,
+    .form-card .lab-table td:last-child {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .form-card .lab-table td:first-child {
+        margin-bottom: 6px;
+    }
+
+    .form-card .lab-table tr {
+        margin-bottom: 12px;
+    }
+
+    .inner-table td {
+        display: table-cell !important;
+        width: auto !important;
+    }
+}
