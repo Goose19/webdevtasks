@@ -1,2 +1,2 @@
 # Info
-Here I am uploading my lab works on web development. The may be some flaws in my realization (code), as it was not intended to be a final product. It's simply a my realizations of lab works that I posted into that repo, not my own projects
+Here I am uploading my lab works on web development. They may be some flaws in my realization (code), as it was not intended to be a final product. It's simply a my realizations of lab works that I posted into that repo, not my own projects
