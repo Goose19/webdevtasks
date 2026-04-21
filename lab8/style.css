@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #0f3d2e;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+main {
+    background: white;
+    color: black;
+    padding: 30px 20px 90px;
+    flex: 1;
+}
+
+footer {
+    background: #292828;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#main_menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 20px;
+    background: white;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#main_menu a {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #0f3d2e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.15s;
+}
+
+#main_menu a:hover {
+    background: #14533f;
+}
+
+#main_menu a.selected {
+    background: #9f2525;
+}
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.lab-table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+    background: white;
+}
+
+.lab-table td {
+    border: 1px solid black;
+    padding: 14px;
+    vertical-align: top;
+    line-height: 1.8;
+}
+
+.analysis-table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    margin-top: 15px;
+}
+
+.analysis-table td {
+    border: 1px solid black;
+    padding: 10px 12px;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.ttRow,
+.ttSingleRow {
+    border: 1px solid black;
+    background: white;
+    padding: 14px;
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+.content-shell {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-card {
+    background: white;
+    border: 1px solid #d3d0d0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.form-card h2,
+.ttSingleRow h2 {
+    margin-top: 0;
+    color: #0f3d2e;
+}
+
+.helper-text {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.form-card .lab-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    background: transparent;
+}
+
+.form-card .lab-table tr {
+    background: transparent;
+}
+
+.form-card .lab-table td {
+    border: none;
+    padding: 0;
+    vertical-align: middle;
+    line-height: normal;
+    background: transparent;
+}
+
+.form-card .lab-table td:first-child {
+    width: 28%;
+    padding-right: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.form-card .lab-table td:last-child {
+    width: 72%;
+}
+
+.form-card .lab-table textarea,
+.form-card .lab-table input[type="text"],
+.form-card .lab-table select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #b9b5b5;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+.form-card .lab-table textarea {
+    resize: vertical;
+    min-height: 220px;
+}
+
+.button-cell {
+    text-align: left;
+    padding-top: 10px !important;
+}
+
+.button-cell .key {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 42px;
+    background: #0f3d2e;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+    transition: 0.15s;
+}
+
+.button-cell .key:hover {
+    background: #14533f;
+    transform: translateY(-1px);
+}
+
+.button-cell .key:active {
+    transform: translateY(0);
+}
+
+.repeat-wrap {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.repeat-wrap .key {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 44px;
+    background: #9f2525;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+    transition: 0.15s;
+}
+
+.repeat-wrap .key:hover {
+    background: #a62525;
+    transform: translateY(-1px);
+}
+
+.src_text {
+    padding: 14px;
+    background: #f7f6f6;
+    border-left: 4px solid #0f3d2e;
+    color: #174836;
+    font-style: italic;
+    line-height: 1.7;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.src_error {
+    padding: 14px;
+    background: #f3e9e9;
+    border-left: 4px solid #9f2525;
+    color: #9f2525;
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+    .form-card .lab-table,
+    .form-card .lab-table tbody,
+    .form-card .lab-table tr,
+    .form-card .lab-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .form-card .lab-table td:first-child,
+    .form-card .lab-table td:last-child {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .form-card .lab-table td:first-child {
+        margin-bottom: 6px;
+    }
+
+    .form-card .lab-table tr {
+        margin-bottom: 12px;
+    }
+}
+
+@media print {
+    header,
+    footer,
+    #main_menu,
+    .repeat-wrap {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .ttSingleRow {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+    }
+}
